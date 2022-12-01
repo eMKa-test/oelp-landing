@@ -1,0 +1,11 @@
+@mixin noIndents {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin flex( $direction: row, $ai: center, $jc: center) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $direction;
+}

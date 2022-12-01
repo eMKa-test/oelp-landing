@@ -1,0 +1,107 @@
+.ReactModalPortal {
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        .separate {
+            height: 2px;
+            width: 30px;
+            background: $primaryColor;
+        }
+
+        &__toggle-buttons {
+            display: flex;
+            align-items: center;
+            min-height: 35px;
+        }
+
+        &__close {
+            @include flex;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            min-width: 40px;
+            min-height: 40px;
+            background-color: $mainbg;
+            z-index: 1;
+            margin: -20px -20px 0 0;
+            border-radius: 50px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        &__title {
+            font: 24px/normal "Commissioner", sans-serif;
+            line-height: normal;
+            margin-bottom: 10px;
+            font-weight: 700;
+            padding: 0;
+            color: $blackdark;
+        }
+    }
+
+    .modal-body {
+        height: 100%;
+
+        .form {
+            text-align: center;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: -20px;
+        padding: 10px 0 5px;
+
+        &__link {
+            font: 16px/20px Commissioner, sans-serif;
+            color: $primaryColor;
+
+            a {
+                border-bottom: 1px dashed $primaryColor;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+}
+
+
+.ReactModal__Content {
+    display: flex;
+    flex-direction: column;
+}
+
+.ReactModal__Overlay {
+    z-index: 20;
+}
+
+.ReactModalPortal > div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}

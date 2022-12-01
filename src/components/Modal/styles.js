@@ -1,0 +1,27 @@
+export default {
+    overlay: {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+    },
+    content: {
+        position: "relative",
+        zIndex: 20,
+        backgroundColor: "rgba(255, 255, 255, 1)",
+        top: "50%",
+        left: "50%",
+        right: "auto",
+        bottom: "auto",
+        marginRight: "-50%",
+        transform: "translate(-50%, -50%)",
+        width: "350px",
+        maxWidth: "75%",
+        padding: "40px 30px",
+        overflow: "visible",
+        borderRadius: "3px",
+        border: "none",
+    },
+};

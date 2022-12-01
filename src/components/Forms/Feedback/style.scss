@@ -1,0 +1,93 @@
+.feedBack-form {
+    padding-right: 50px;
+    font: 16px/normal Fira Sans Extra Condensed, sans-serif;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .feedBack-form__wrapper {
+        padding: 50px 30px;
+        background: $primaryColor;
+
+        .title {
+            font: 30px/36px "Commissioner", sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            color: $white;
+        }
+
+        .description {
+            font: 14px/normal "Commissioner", sans-serif;
+            font-weight: 400;
+            text-align: center;
+            color: transparentize($white, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .sent {
+            padding: 0 40px;
+            display: block;
+            font-size: 18px;
+            font-family: Commissioner, sans-serif;
+            color: $white;
+            font-weight: 400;
+        }
+    }
+}
+
+.form-inputs {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    @include flex(column);
+
+    .input-wrapper {
+
+        input {
+            font: 15px/normal Fira Sans, sans-serif;
+            font-weight: 400;
+            text-align: center;
+            height: 50px;
+            border: 1px solid transparentize($black, 0.9);
+            padding: 8px 15px;
+            background-color: $white;
+            margin: 5px 0 10px;
+            border-radius: 25px;
+            outline: none;
+            width: 100%;
+        }
+    }
+
+    .submit {
+        text-transform: uppercase;
+        background: $mainbg;
+        color: $white;
+        width: 240px;
+        margin-top: 20px;
+        box-shadow: 0 28px 14px -15px transparentize($mainbg, 0.6);
+        transition: all 150ms ease;
+
+        &:disabled {
+            background: transparentize($mainbg, 0.4);
+            color: $darkgrey;
+        }
+    }
+
+    .error-message {
+        position: absolute;
+        left: 0;
+        top: 32%;
+        transform: translate(0, -50%);
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        font: 14px/20px Commissioner, sans-serif;
+        color: $white;
+        white-space: nowrap;
+    }
+}

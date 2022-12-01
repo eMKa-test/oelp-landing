@@ -1,0 +1,83 @@
+.services-list__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+
+    .service-list__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        .service-card__wrapper {
+            display: flex;
+            width: calc(100% / 3);
+            height: auto;
+
+            .service-card {
+                @include flex(column);
+                background: $mainbg;
+                box-shadow: 0 0 0 5px transparentize($white, 0.95);
+                width: 100%;
+
+                &__id {
+                    font: 14px "Commissioner", sans-serif;
+                    font-weight: 900;
+                    color: transparentize($primaryColor, 0.35);
+                    transform: translateX(-20px)rotate(-90deg)scale(0);
+                    transition: transform $slowest cubic-bezier(.3,.16,.43,1.31);
+
+                    &.animate_active {
+                        transform: translateX(0px)rotate(0deg)scale(1);
+                    }
+                }
+
+                &__middle {
+                    @include flex(column);
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-top: 5px;
+                    width: 100%;
+
+                    &__image {
+                        @include flex();
+                        overflow: hidden;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        width: 50px;
+                        height: 50px;
+
+                        img {
+                            object-fit: contain;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                &__title {
+                    font: 16px "Commissioner", sans-serif;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+
+                &__separate {
+                    width: 2px;
+                    height: 10px;
+                    margin-bottom: 10px;
+                    background: $primaryColor;
+                }
+
+                &__description {
+                    text-align: center;
+                    font: 14px "Commissioner", sans-serif;
+                    color: transparentize($white, 0.4);
+                }
+                margin: 10px;
+                padding: 30px 30px 50px 30px;
+            }
+        }
+    }
+}
+

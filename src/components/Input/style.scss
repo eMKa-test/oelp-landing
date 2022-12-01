@@ -1,0 +1,39 @@
+.input-wrapper {
+    position: relative;
+    @include flex;
+    margin: 5px 0 15px;
+
+    input {
+        font: 15px/normal Fira Sans, sans-serif;
+        font-weight: 400;
+        text-align: center;
+        height: 50px;
+        border: 1px solid $grey;
+        padding: 8px 15px;
+        background-color: $white;
+        border-radius: 25px;
+        outline: none;
+        width: 100%;
+    }
+
+    .password-button {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        margin: 0;
+        padding: 8px;
+        border-radius: 50px;
+        background: $white;
+        transition: background $fast ease;
+
+        &:hover {
+            background: $lightnessgrey;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+    }
+}

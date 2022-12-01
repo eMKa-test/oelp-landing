@@ -1,0 +1,359 @@
+@media screen and ($laptop) {
+    .landing-page__top-pane {
+        min-height: 750px !important;
+    }
+
+    .header-section {
+        .top-panel {
+            padding: 14px 20px 30px !important;
+
+            &__logo {
+                text-align: center !important;
+
+                .logo-link {
+                    img {
+                        max-width: 140px !important;
+                        min-width: 140px !important;
+                    }
+                }
+            }
+
+            &__control {
+                display: none !important;
+            }
+        }
+
+        .top-panel-mobile {
+            display: block !important;
+        }
+    }
+
+    .banner {
+        box-shadow: 0 0 0 1px transparentize($white, 0.85) !important;
+
+        .title {
+            padding: 0 !important;
+            height: 100% !important;
+            overflow: hidden !important;
+
+            &__wrapper {
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 10px 20px 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+
+                .header {
+                    margin-top: 250px !important;
+                }
+
+                .description {
+                    text-align: center !important;
+                    line-height: 34px !important;
+                }
+
+                .connect-button {
+                    margin-top: 30px !important;
+                }
+            }
+        }
+    }
+
+    .landing-page__middle-pane {
+        margin-top: 0 !important;
+        .middle-pane__services-list-wrapper {
+            padding: 0 20px !important;
+
+            .services-list__wrapper {
+                padding: 50px 0px 30px !important;
+
+                .service-list__body {
+                    .service-card__wrapper {
+                        width: 50% !important;
+
+                        .service-card {
+                            &__title {
+                                font-size: 18px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middle-pane__useful-environment {
+        padding: 0 20px 50px !important;
+
+        .useful-environment__wrapper {
+            .separate-container {
+                @include flex;
+            }
+        }
+
+        .useful__title {
+            font-size: 30px !important;
+            text-align: center !important;
+        }
+
+        .useful__example-title {
+            text-align: center !important;
+        }
+
+        .useful-card__wrapper {
+            .useful-card {
+                .useful__info {
+                    &-title {
+                        @include flex(null, center, space-between);
+                        text-align: center !important;
+
+                        .list-sign {
+                            &__mobile {
+                                display: block !important;
+                            }
+                        }
+                    }
+
+                    &-description {
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle-pane__about {
+        padding: 0 20px 50px !important;
+
+        .about-image {
+            display: none !important;
+        }
+
+        .about-info {
+            margin: 50px 0 0 !important;
+
+            &__title {
+                font-size: 30px !important;
+                text-align: center !important;
+                width: 100% !important;
+            }
+        }
+    }
+
+    .footer {
+        &__wrapper-container {
+            padding: 0 20px !important;
+        }
+
+        &__top {
+            padding-top: 60px;
+            @include flex(column);
+
+            & .stub-middle {
+                display: none !important;
+            }
+
+            .feedBack-form {
+                padding: 0 !important;
+                width: 100% !important;
+
+                .feedBack-form__wrapper {
+                    .title {
+                        font-size: 24px !important;
+                    }
+                }
+            }
+
+            .contacts {
+                padding: 0 !important;
+                width: 100% !important;
+
+                &__wrapper {
+                    @include flex(row-reverse, center, space-between);
+
+                    .scroll-top{
+                        margin-top: 30px !important;
+                        width: 60px !important;
+                        height: 60px !important;
+
+                        .icon {
+                            width: 24px !important;
+                            height: 24px !important;
+                        }
+                    }
+
+                    .raw {
+                        margin-bottom: 30px !important;
+                        flex-wrap: nowrap !important;
+
+                        &.address {
+                            .info {
+                                width: 150px !important;
+                            }
+                        }
+
+                        img {
+                            margin-right: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 875px) {
+    .banner {
+        .title {
+            &__wrapper {
+                .connect-button {
+                    margin-top: 20px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ($tablet) {
+    .header-section {
+        .top-panel {
+            &__container {
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            &__logo {
+                text-align: left !important;
+            }
+        }
+    }
+
+    .banner {
+        .title {
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+
+            &__wrapper {
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                margin-top: 170px !important;
+                padding: 0 !important;
+
+                .header {
+                    display: none !important;
+                }
+
+                .description {
+                    font-size: 28px !important;
+                }
+
+                .connect-button {
+                    margin-top: 50px !important;
+                }
+            }
+        }
+    }
+
+    .landing-page__middle-pane {
+        .middle-pane__services-list-wrapper {
+            .services-list__wrapper {
+                .service-list__body {
+                    .service-card__wrapper {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle-pane__about {
+        .about-info {
+            margin: 30px 0 0 !important;
+            &__title {
+                margin-bottom: 10px !important;
+            }
+
+            &__content {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .footer {
+        &__wrapper-container {
+            padding: 0 20px !important;
+        }
+
+        &__top {
+            padding-bottom: 20px !important;
+
+            .contacts {
+                padding: 0 !important;
+                width: 100% !important;
+
+                &__wrapper {
+                    flex-direction: column-reverse !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+
+                    .raw {
+                        margin-bottom: 0 !important;
+
+                        &.address {
+                            .info {
+                                width: auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and ($mobile) {
+    .banner {
+        .title {
+            padding-top: 50px !important;
+
+            &__wrapper {
+                margin-top: 50px !important;
+                padding: 0 30px 0 !important ;
+
+                .description {
+                    font-size: 22px !important;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            .contacts {
+                &__wrapper {
+                    .raw {
+                        &.address {
+                            .info {
+                                width: 150px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middle-pane__about {
+        .about-info {
+
+            &__content {
+                text-align: center !important;
+            }
+        }
+    }
+}

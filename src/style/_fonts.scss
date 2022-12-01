@@ -1,0 +1,404 @@
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-t.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-t.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-t-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-t-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-e-l.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-e-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-e-l-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-e-l-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-l.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-l-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-l-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-r.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-r.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-m.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-m.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-m-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-m-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-s-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-s-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-s-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-s-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-e-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-e-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-e-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-e-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-bl.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-bl.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira-sans/fira_sans-bl-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira-sans/fira_sans-bl-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-t.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-t.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-e-l.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-e-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-l.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-r.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-r.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-m.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-m.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-s-b.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-s-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-b.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-e-b.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-e-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Commissioner";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/commissioner/commissioner-bl.woff2") format("woff2"),
+    url("../../assets/fonts/commissioner/commissioner-bl.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-t.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-t.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-t-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-t-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-l.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-l-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-l-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-l.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-l.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-l-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-l-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-r.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-r.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-m.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-m.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-m-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-m-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-s-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-s-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-s-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-s-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-b.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-b.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-b-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-e-b-i.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-bl.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-bl.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    src: url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-bl-i.woff2") format("woff2"),
+    url("../../assets/fonts/fira_sans_extra_condensed/fira_sans_extra_condensed-bl-i.woff") format("woff");
+}

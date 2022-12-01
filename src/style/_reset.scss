@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    @include noIndents;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background: inherit;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+        background: inherit;
+    }
+}
+
+ul {
+    list-style: none;
+    @include noIndents;
+}
+
+button {
+    border: none;
+    outline: none;
+    &:focus, &:active {
+        border: none;
+        outline: none;
+    }
+}

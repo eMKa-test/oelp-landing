@@ -1,0 +1,165 @@
+.header-section {
+    z-index: 1;
+    position: relative;
+
+    .top-panel {
+        padding: 20px 30px 14px 30px;
+        &__container {
+            font-family: "Fira Sans", "sans-serif";
+            color: $white;
+            @include flex;
+            max-width: 1300px;
+            border-bottom-width: 2px;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            width: 40%;
+            .logo-link {
+                display: inline-block;
+                img {
+                    object-fit: contain;
+                    max-width: 180px;
+                    min-width: 180px;
+                }
+            }
+        }
+
+        &__control {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 30px;
+            margin: auto;
+
+            .navigation {
+                @include flex(null, null, flex-start);
+                flex-wrap: wrap;
+
+                &-link {
+                    font: 14px/20px "Commissioner", sans-serif;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .top-panel-mobile {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        pointer-events: none;
+
+        .toggle-button {
+            width: 60px;
+            height: 60px;
+            background-color: $primaryColor;
+            cursor: pointer;
+            margin-left: auto;
+            pointer-events: auto;
+            @include flex;
+            z-index: 2;
+        }
+
+        &__backdrop {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: transparentize($black, 0.5);
+            transform: none;
+            pointer-events: auto;
+            z-index: -1;
+            transition: opacity $slow ease, visibility $slow ease;
+
+            &.hide {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &.show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .aside {
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            width: 265px;
+            height: 100%;
+            background: $mainbg;
+            box-shadow: 0 0 15px 0 transparentize($black, 0.5);
+            transition: right $slow ease;
+
+            &.hide {
+                right: -270px;
+            }
+
+            &.show {
+                right: 0;
+            }
+
+            .close-button {
+                @include flex;
+                position: absolute;
+                left: -50px;
+                top: 10px;
+                pointer-events: auto;
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                background: $primaryColor;
+                transition: all $slow ease;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &.hide {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .login-button {
+                pointer-events: auto;
+                flex: 1 0 100%;
+                padding: 20px 10px;
+                @include flex;
+                text-align: center;
+            }
+
+            nav {
+                @include flex(column, flex-start);
+                flex: 1 0 100%;
+                margin: 30px 20px;
+
+                .navigation-link {
+                    pointer-events: auto;
+                    cursor: pointer;
+                    text-align: left;
+                    color: $white;
+                    padding: 15px;
+                }
+
+            }
+        }
+    }
+}
+
